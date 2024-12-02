@@ -120,6 +120,9 @@ export const MemeGrid = ({ memes, columns, spacing, className, type }) => {
           className={cn(memeItemVariants({ spacing }))}
         >
           <MemeCard memeId={memeId} index={i} type={type} />
+                    <Button className='text-white'>
+                  Inscribe the Meme
+            </Button>
         </div>
       ))}
     </div>
