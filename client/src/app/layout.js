@@ -1,7 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/modules/navbar";
-import Footer from "@/components/footer";
+import AptosWalletProvider from "@/wallet-provider/aptos-wallet-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,8 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Navbar />
-        {children}
+        <AptosWalletProvider>
+          <>
+            <Navbar />
+            {children}
+          </>
+        </AptosWalletProvider>
       </body>
     </html>
   );

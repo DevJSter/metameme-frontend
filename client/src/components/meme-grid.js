@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import { Download, Edit } from "lucide-react";
 import { Button } from "./ui/button";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import { Loader2 } from "lucide-react";
 
 const memeGridVariants = cva("max-w-4xl md:max-w-6xl px-2", {
   variants: {
@@ -118,13 +117,9 @@ export const MemeGrid = ({ memes, columns, spacing, className, type }) => {
       {memes.map((memeId, i) => (
         <div
           key={`${memeId}-${i}`}
-          className={cn(memeItemVariants({ spacing }, 'flex items-center justify-center'))}
+          className={cn(memeItemVariants({ spacing }))}
         >
           <MemeCard memeId={memeId} index={i} type={type} />
-
-          <Button className='text-white'>
-                  Inscribe the Meme
-            </Button>
         </div>
       ))}
     </div>
@@ -135,7 +130,6 @@ export default function MemeGallery({ data, type }) {
   return (
     <div className="flex items-center justify-center md:mt- mt-8 md:p-8">
       <MemeGrid memes={data} type={type} />
-      
     </div>
   );
 }

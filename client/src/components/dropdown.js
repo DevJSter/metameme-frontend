@@ -25,12 +25,12 @@ export const SocialDropdown = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://www.instagram.com/whatwasthatmeme",
+      href: "https://www.instagram.com/MetaMeme",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/whatwasthatmeme",
+      href: "https://twitter.com/MetaMeme",
     },
   ];
 
