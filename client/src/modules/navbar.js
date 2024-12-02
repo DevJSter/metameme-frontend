@@ -17,12 +17,12 @@ const Navbar = () => {
     { icon: Mail, href: "mailto:0xswayam@gmail.com", label: "Email" },
     {
       icon: Instagram,
-      href: "https://www.instagram.com/whatwasthatmeme",
+      href: "https://www.instagram.com/subtle._.one",
       label: "Instagram",
     },
     {
       icon: Twitter,
-      href: "https://twitter.com/whatwasthatmeme",
+      href: "https://twitter.com/0xAbhii",
       label: "X (Twitter)",
     },
   ];
